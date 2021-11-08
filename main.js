@@ -1,20 +1,30 @@
-var images = ["https://i.postimg.cc/MGn9GJXw/family.jpg","https://i.postimg.cc/qqyYvVbq/grandpa.jpg", "https://i.postimg.cc/wjMnFtMX/father.jpg" , "https://i.postimg.cc/5ymDKL83/bro.jpg", "https://i.postimg.cc/JnL6wtrd/sister.jpg", "https://i.postimg.cc/bw5W5zSK/mother.jpg"];
-var names = ["Fmaily Book","Ranbir Singh", "Diljeet Singh", "Rocky Singh", "Alia Singh", "Soni Singh"];
-var i = 0;
-function update()
+name_stud=[];
+function submit()
 {
-    i++;
-    var numbers_of_family_member_in_array = 5
-    if(i > numbers_of_family_member_in_array)
-      {
-          i = 0;
-      }
+    var name_1 = document.getElementById("stud1").value;
+    var name_2 = document.getElementById("stud2").value;
+    var name_3 = document.getElementById("stud3").value;
+    var name_4 = document.getElementById("stud4").value;
+    var name_5 = document.getElementById("stud5").value;
+
+    name_stud.push(name_1);
+    name_stud.push(name_2);
+    name_stud.push(name_3);
+    name_stud.push(name_4);
+    name_stud.push(name_5);
+
+    console.log(name_stud);
+
+    document.getElementById("display_name").innerHTML=name_stud;
+    document.getElementById("submit").style.display= "none";
+    document.getElementById("sort_button").style.display= "inline-block"; 
+
     
-    //Debug the code to store list of images in updatedImage. Use images[i]
-    var updatedImage = [images];
-    //Debug the code to store list of names in updatedName. Use names[i]
-    var updatedName = [names] ;
- 
-    document.getElementById("family_member_image").src = updatedImage;
-    document.getElementById("family_member_name").innerHTML = updatedName;
+}
+
+function sorting(){
+name_stud.sort();
+console.log(name_stud);
+document.getElementById("display_name").innerHTML=name_stud;
+
 }

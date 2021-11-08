@@ -1,26 +1,42 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>
-            Project C78
-        </title>
+<head>
+<title>C79</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="main.js"></script>
+</head>
+<body>
+<center>
+<h3 style="margin-top: 20px; margin-bottom: 20px;">
+List of students in my class
+</h3>
+<div>
+<span>1</span>
+<input type="text" placeholder="Name of the student" id="stud1">
+<br>
 
-        <link rel="stylesheet" href="style.css" type="text/css">
+<span>2</span>
+<input type="text" placeholder="Name of the student" id="stud2">
+<br>
 
-    </head>
-    <body>
-        <center style="margin-top: 40px;">
-            <h1>
-                My Family Book
-            </h1>
+<span>3</span>
+<input type="text" placeholder="Name of the student" id="stud3">
+<br>
 
-            <img src="https://i.postimg.cc/MKdhy06Z/family.jpg" id="family_member_image" width="150px" height="200px">
-            <h4 id="family_member_name"></h4>
-       <button>onclick="update();"Next</button>
-           <!-- Debug the above code to create a button with onclick functionality as given below-->
-            <!-- <button onclick="update();">Next</button>  -->
-          
-        </center>
+<span>4</span>
+<input type="text" placeholder="Name of the student" id="stud4">
+<br>
 
-        <script src="main.js"></script>
-    </body>
+<span>5</span>
+<input type="text" placeholder="Name of the student" id="stud5">
+<br>
+
+</div>
+<button onclick="submit()" id="submit">Submit</button>
+
+<div id="display_name" style="font-weight: bold;"></div>
+
+<button onclick="sorting()" id="sort_button">Sort</button>
+</center>
+</body>
 </html>
